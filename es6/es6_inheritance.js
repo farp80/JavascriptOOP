@@ -9,8 +9,8 @@ class Shape {
 
 class Circle extends Shape {
   constructor(color, radius) {
-    super(color);
-    super.move();
+    super(color); // --> it extends Shape constructor.
+    super.move(); // it allows to see the fShape's move implementation.
     this.radius = radius;
   }
   draw() {
@@ -18,7 +18,7 @@ class Circle extends Shape {
   }
 
   /**
-  * method riding
+  * method riding --> it overrides Shape's implementation
   */
   move() {
     console.log('circle moving ...')
@@ -26,4 +26,6 @@ class Circle extends Shape {
 }
 
 const c = new Circle('red', 33);
+c.draw();
+c.move();
 

@@ -1,44 +1,3 @@
-class Circle {
-  constructor(radius) {
-    this.radius = radius;
-    // drawing will be in the object.
-    this.drawing = function () {
-      console.log(" drawing right now...");
-    }
-  }
-
-  // draw will be in the prototype
-  draw() {
-    console.log(" Drawing circle ....");
-  }
-}
-
-const circle = new Circle(10);
-
-// Hoisting
-
-// function declaration --> we call it before it is defined. (hoisted)
-function sayHello() {
-
-}
-
-// function expression (no hoisted)
-const sayHello = function () {
-
-}
-
-// class declaration and class expression are not hoisted (no raised to the top)
-
-// class declaration
-class Circles {
-
-}
-
-// class expression
-const Cricles = class {
-
-}
-
 /**
  * private methods using symbols
 */
@@ -65,7 +24,7 @@ const _move = new WeakMap()
 class Spheres {
   constructor(radius) {
     _radius3.set(this, radius);
-    // with this approach this is set to undefined as part of the global object.
+    // with this approach this is set to undefined as part of the global object, not for the current object "this [Spheres]".
     _move.set(this, function () {
       console.log('moving .... ')
     });

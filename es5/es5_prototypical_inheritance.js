@@ -14,6 +14,7 @@ function Circle(radius, color) {
 Circle.prototype = Object.create(Shape.prototype); // --> Circle loses its constructor. It inherits from Shape.
 Circle.prototype.constructor = Circle;
 
+
 // Intermediate Function Inheritance
 function extend(Child, Parent) {
   Child.prototype = Object.create(Parent.prototype);

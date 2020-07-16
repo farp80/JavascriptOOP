@@ -25,6 +25,11 @@ Circle.prototype.toString = function () {
 // Objects.keys(obj) --> it just returns instance members.
 // for (let key in obj) --> it returns prototype and instance members.
 
+/***
+ * StopWatch using prototypes
+ * Its biggest drawback is that all the properties are available to the public. There is not abstraction.
+ */
+
 function StopWatch() {
   let start = false;
   let stop = false;
