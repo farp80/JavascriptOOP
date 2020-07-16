@@ -4,9 +4,9 @@ index.html: it is the entry point to test the different .js files. I used LiveSe
 
 es5
 	1. es5_index.js
-	1. es5_prototypes.js
-	1. es5_prototypical_inheritance.js
-	1. es5_stopwatch.js
+	2. es5_prototypes.js
+	3. es5_prototypical_inheritance.js
+	4. es5_stopwatch.js
 	
 es6
 	es6.js
